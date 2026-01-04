@@ -1,0 +1,161 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f1f3f6; /* e-commerce background */
+}
+
+/* PAGE CONTAINER */
+.container {
+  padding: 20px;
+}
+
+/* HEADING */
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* FILTERS BAR */
+.filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.filters input,
+.filters select,
+.filters button {
+  padding: 8px 10px;
+  font-size: 14px;
+}
+
+.filters button {
+  background: #2874f0;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  opacity: 0.9;
+}
+
+/* MAIN LAYOUT */
+.main {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* PRODUCT GRID */
+.grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+/* PRODUCT CARD */
+.card {
+  background: #fff;
+  padding: 12px;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+/* PRODUCT IMAGE */
+.card img {
+  height: 160px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* PRODUCT TITLE */
+.card h4 {
+  font-size: 14px;
+  margin: 6px 0;
+  height: 38px;
+  overflow: hidden;
+}
+
+/* PRICE */
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 6px 0;
+}
+
+/* CATEGORY */
+.category {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+/* STOCK STATUS */
+.in {
+  color: green;
+  font-size: 13px;
+}
+
+.out {
+  color: red;
+  font-size: 13px;
+}
+
+/* BUTTON */
+.card button {
+  margin-top: auto;
+  padding: 8px;
+  background: #2874f0;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.card button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* OUT OF STOCK LOOK */
+.disabled {
+  opacity: 0.6;
+}
+
+/* CART */
+.cart {
+  width: 300px;
+  background: white;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.cart h3 {
+  margin-top: 0;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.cart input {
+  width: 50px;
+}
