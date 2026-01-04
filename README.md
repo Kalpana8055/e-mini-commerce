@@ -68,3 +68,117 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img width="1892" height="676" alt="image" src="https://github.com/user-attachments/assets/8feb8424-7715-4a41-a2fc-9be68624a9c8" />
+<img width="1517" height="837" alt="image" src="https://github.com/user-attachments/assets/514f3e26-6cfe-4927-8e40-dd08383f7981" />
+<img width="1897" height="693" alt="image" src="https://github.com/user-attachments/assets/2cfb9176-7a2b-4d3e-a56f-ba25960c5a19" />
+<img width="1482" height="687" alt="image" src="https://github.com/user-attachments/assets/7c0e8023-9a91-4284-b034-5c8cccc03fde" />
+<img width="1506" height="712" alt="image" src="https://github.com/user-attachments/assets/ebbb04f4-4892-4a70-bedd-e510a281919f" />
+file structure 
+src/
+│
+├── components/
+│   ├── ProductList.js
+│   ├── ProductCard.js
+│   ├── Filters.js
+│   └── Cart.js
+│
+├── hooks/
+│   └── useLocalStorage.js
+│
+├── App.js
+├── styles.css
+└── index.js
+🛒 Mini E-Commerce Website (React)
+📌 Project Overview
+
+This project is a Mini E-Commerce Web Application developed using React.js.
+It allows users to browse products, filter and search items, sort by price, manage a shopping cart, and handle out-of-stock products effectively.
+
+The application simulates real-world e-commerce behavior using API data along with custom products.
+
+ Features Implemented
+ Product Listing
+
+Displays 20+ products
+
+Products loaded from:
+
+FakeStore API
+
+Custom-added products (Makeup, Perfume, Accessories, etc.)
+
+Each product shows:
+
+Image
+
+Name
+
+Price (₹ INR)
+
+Category
+
+Stock status
+
+ Search & Filter
+
+Search products by name
+
+Filter products by category
+
+Sort products by price:
+
+Low to High
+
+High to Low
+
+ Cart Functionality
+
+Add products to cart
+
+Increase or decrease quantity
+
+Remove product automatically when quantity becomes zero
+
+Cart data stored using localStorage
+
+Cart persists even after page refresh
+
+ Out of Stock Handling
+
+Out-of-stock products are still visible
+
+Clearly marked as “Out of Stock”
+
+Add to Cart button is disabled
+
+UI visually faded for better user experience
+
+ Image Handling
+
+Product images loaded from reliable sources
+
+Fallback image handling implemented using onError
+
+Ensures UI does not break if image fails to load
+
+Concepts Used
+
+React Hooks:
+
+useState
+
+useEffect
+
+useMemo
+
+Component-based architecture
+
+Props for data flow
+
+Conditional rendering
+
+Array operations (map, filter, sort)
+
+Browser localStorage
+
+
